@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-</head>
-<body>
-    <a href="{{ url_for('home') }}"  class="btn btn-outline-primary btn-lg active"
-    role="button" aria-pressed="true">Inicio</a>
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container-fluid">
     <h1>Productos</h1>
     <p>Estos son los productos que ofrecemos.</p>
-</body>
-</html>
+  </div>
+{% endblock %}
+
