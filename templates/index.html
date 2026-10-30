@@ -1,9 +1,13 @@
 {% extends "layout.html" %}
 
 {% block content %}
-        <div class="container-fluid">
-            <h1>UDL-ICO</h1>
-            <p>{{mensaje}}</p>
-            <P>Dulce Fernanda Verdin Delgado </P>
-        </div>
+<div class="container-fluid">
+  <h1>UDL-ICO</h1>
+
+  <div class="text-center">
+  <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="img-fluid" width="200" />
+  </div>
+  <p>{{ mensaje }}</p>
+  <p>Dulce Fernanda Verdin Delgado</p>
+</div>
 {% endblock %}

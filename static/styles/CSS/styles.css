@@ -81,6 +81,23 @@ body {
   box-shadow: none;
 }
 
+.product-carousel {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  background-color: var(--bg-card);
+}
+
+.product-carousel .carousel-item img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+}
+
+.product-carousel .carousel-control-prev-icon,
+.product-carousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+
 /* ==========================================
    SECCIONES Y ENCABEZADOS (h1, p)
    ========================================== */
@@ -111,3 +128,10 @@ p {
     border-bottom: none;
   }
 }
+
+@media (max-width: 576px) {
+  .product-carousel .carousel-item img {
+    height: 260px;
+  }
+}
+ 

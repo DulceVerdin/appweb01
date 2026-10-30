@@ -1,8 +1,16 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <div class="container-fluid">
-    <h1>Servicios</h1>
-    <p>Estos son los servicios que ofrecemos.</p>
+<div class="container-fluid">
+  <h1>Servicios</h1>
+  <p>Estos son los servicios que ofrecemos.</p>
+  <div class="card" style="width: 18rem;">
+    <img src="{{ url_for('static', filename='img/productos/vela.jpg') }}" class="card-img-top" alt="Vela">
+    <div class="card-body">
+      <h5 class="card-title">Velas mama coco</h5>
+      <p class="card-text">ofrecemos una variedad de servicios para satisfacer sus necesidades.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
   </div>
+</div>
 {% endblock %}
